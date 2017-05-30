@@ -7,6 +7,11 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('index', { path: '/' });
+  this.route('patients', function() {
+    this.route('patient', { path: '/:patient_id/summary' });
+  });
+  this.route('activities');
 });
 
 export default Router;

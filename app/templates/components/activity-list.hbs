@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+    <div class="four columns">
+      <h2>{{title}}</h2>
+      <table class="u-full-width">
+        <thead>
+          <tr>
+            <th><a {{action "orderBy" "activity"}}>Activity</a></th>
+            <th><a {{action "orderBy" "intensity"}}>Intensity</a></th>
+          </tr>
+        </thead>
+        <tbody>
+        {{#each activities as |activity|}}
+          <tr>
+            <td>{{activity.activity}}</td>
+            <td>{{activity.intensity}}</td>
+          </tr>
+        {{/each}}
+        </tbody>
+      </table>
+      <p>Activity count: {{activities.length}}</p>
+    </div>
+  </div>
+</div>

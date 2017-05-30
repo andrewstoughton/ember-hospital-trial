@@ -1,0 +1,26 @@
+<h2>{{title}}</h2>
+<table class="u-full-width">
+  <thead>
+    <tr>
+      <th><a {{action "orderBy" "name"}}>name</a></th>
+      <th>birthDate</th>
+      <th>gender</th>
+      <th>heightCm</th>
+      <th>weightKg</th>
+      <th><a {{action "orderBy" "bmi"}}>bmi</a></th>
+    </tr>
+  </thead>
+  <tbody>
+  {{#each patients as |patient|}}
+    <tr>
+      <td>{{#link-to 'patients.patient' patient.id}}{{patient.name}}{{/link-to}}</td>
+      <td>{{patient.birthDate}}</td>
+      <td>{{patient.gender}}</td>
+      <td>{{patient.heightCm}}</td>
+      <td>{{patient.weightKg}}</td>
+      <td>{{patient.bmi}}</td>
+    </tr>
+  {{/each}}
+  </tbody>
+</table>
+<p>Patient count: {{patients.length}}</p>

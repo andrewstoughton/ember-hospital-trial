@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "type": "activity",
+    "attributes": {
+      "activity": "sleeping",
+      "intensity": "none"
+    },
+    "relationships": {}
+  },
+  {
+    "id": 2,
+    "type": "activity",
+    "attributes": {
+      "activity": "stationary-awake",
+      "intensity": "low"
+    },
+    "relationships": {}
+  },
+  {
+    "id": 3,
+    "type": "activity",
+    "attributes": {
+      "activity": "walking",
+      "intensity": "moderate"
+    },
+    "relationships": {}
+  },
+  {
+    "id": 4,
+    "type": "activity",
+    "attributes": {
+      "activity": "cycling",
+      "intensity": "moderate"
+    },
+    "relationships": {}
+  },
+  {
+    "id": 5,
+    "type": "activity",
+    "attributes": {
+      "activity": "swimming",
+      "intensity": "vigorous"
+    },
+    "relationships": {}
+  },
+  {
+    "id": 6,
+    "type": "activity",
+    "attributes": {
+      "activity": "running",
+      "intensity": "vigorous"
+    },
+    "relationships": {}
+  }
+]

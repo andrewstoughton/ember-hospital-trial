@@ -1,0 +1,19 @@
+<h3>{{title}}</h3>
+<table class="u-full-width">
+  <thead>
+    <tr>
+      <th>activity</th>
+      <th>minutes</th>
+    </tr>
+  </thead>
+  <tbody>
+  {{#each summary as |summary|}}
+    <tr>
+      <td>{{summary.activity}}</td>
+      <td>{{summary.minutes}}</td>
+    </tr>
+  {{/each}}
+  </tbody>
+</table>
+
+<p>Total time: {{totalTime}}</p>
